@@ -62,3 +62,14 @@ the backbone for the access control layer (ACL).
 
 ## The Chain
 We use a permissioned network based on Ethereum using proof of stake.
+
+## Data Request / Transfer
+A data request is a transaction asking for a specific data type from multiple
+[randomly] chosen participants (research/pharma usecase), or a specific data of
+a specific person (insurance usecase). The transaction includes the public key
+for which the data should be encrypted before transmission.
+
+The data owner (the patient for instance) can choose to reject or accept the
+request. Once the data owner accepts a request, the data provider would then
+encrypt the requested data with the provided public key in the transaction and
+their own private key, and send the data to the requester outside the chain.
