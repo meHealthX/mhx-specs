@@ -55,3 +55,10 @@ Protocol](https://oceanprotocol.com/) and use them in our system. The data
 stays where it is, and is transferred between players outside the scope of mhx.
 We only handle the permissions and the users and businesses talk through this
 system to give and gain access to different data.
+
+However, we do provide SDKs and pieces of software to better integrate the
+existing storage systems to one another, while using the data on the chain as
+the backbone for the access control layer (ACL).
+
+## The Chain
+We use a permissioned network based on Ethereum using proof of stake.
