@@ -19,7 +19,8 @@ EMR includes all the data recorded and produced at the clinics, hospitals, and
 doctor's offices, whereas digital health data is either stored on the patients'
 phones/devices, or on the platform providing the service (digital health SMEs
 for instance). Each of these data have their own specific ownership models and
-mhx needs to handle them accordingly.
+mhx needs to handle them accordingly. [MEP 1](mep-1-data-emr.md) and [MEP
+2](mep-2-data-dh.md) explain the two data types in more detail.
 
 ## Roles
 Not all players have the same permissions on the system, and they interact
@@ -33,7 +34,8 @@ include:
 - Research institutes
 
 Each role has their own specific permissions which consequently define how they
-interact with the system.
+interact with the system. Please refer to [MEP 3](mep-3-roles.md) for more
+detail.
 
 ## ID Management
 There needs to be a way to authenticate players and users of the system. There
@@ -46,7 +48,7 @@ of them.
 
 On the other hand, the businesses have more sensitive permissions on the system
 and they need to go through more scrutiny to get their corresponding keys and
-permissions.
+permissions. [MEP 4](mep-4-ids.md) further explains the id management.
 
 ## Storage
 mhx does NOT store any data other than the permissions to the hashes of the
@@ -62,6 +64,7 @@ the backbone for the access control layer (ACL).
 
 ## The Chain
 We use a permissioned network based on Ethereum using proof of stake.
+A more detailed explanation of the chain is found on [MEP 5](mep-5-chain.md).
 
 ## Wallet
 On the customer side, other than managing the keys for the user, the wallet
