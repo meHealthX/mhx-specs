@@ -63,6 +63,18 @@ the backbone for the access control layer (ACL).
 ## The Chain
 We use a permissioned network based on Ethereum using proof of stake.
 
+## Wallet
+On the customer side, other than managing the keys for the user, the wallet
+gives convenient access to the users' data, as well as notifying the user of
+consent requests each time a party asks for a user's specific data. The wallet
+is the app and/or the web platform through which the user interacts with the
+system.
+
+The wallet also has the usual capabilities related to cryptocurrency which
+enables the economy designed by the system. These include for instance reward
+for voluntarily sharing anonymized data, and consuming those rewards for
+services provided on the platform.
+
 ## Data Request / Transfer
 A data request is a transaction asking for a specific data type from multiple
 [randomly] chosen participants (research/pharma usecase), or a specific data of
