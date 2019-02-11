@@ -23,9 +23,8 @@ mhx needs to handle them accordingly. [MEP 1](mep-1-data-emr.md) and [MEP
 2](mep-2-data-dh.md) explain the two data types in more detail.
 
 ## Roles
-Not all players have the same permissions on the system, and they interact
-with the modules and smart contracts according to their role. These roles
-include:
+Not all players have the same permissions on the system, and they interact with
+the modules and smart contracts according to their role. These roles include:
 
 - Patients/users
 - Doctors/hospitals
@@ -65,6 +64,19 @@ the backbone for the access control layer (ACL).
 ## The Chain
 We use a permissioned network based on Ethereum using proof of stake.
 A more detailed explanation of the chain is found on [MEP 5](mep-5-chain.md).
+
+## Smart Contracts
+The smart contracts handle the core logic of the system, including events such
+as:
+- request for consent
+- automatic compensation of the providers of the data
+
+However, not all smart contracts are valid and they are audited and regulated,
+and whenever deemed necessary, they should be invalidated. We use the [modern
+part of] [X.509](https://en.wikipedia.org/wiki/X.509) to sign and certify the
+contracts. The clients and the user wallets, would only accept contracts with a
+valid certificate. There can be multiple certificate authority in the
+ecosystem.
 
 ## Wallet
 On the customer side, other than managing the keys for the user, the wallet
