@@ -100,3 +100,22 @@ The data owner (the patient for instance) can choose to reject or accept the
 request. Once the data owner accepts a request, the data provider would then
 encrypt the requested data with the provided public key in the transaction and
 their own private key, and send the data to the requester outside the chain.
+
+## Federated Search
+One major aspect of the system is to find people who satisfy certain conditions
+and ask for their consent for a specific part of their data. Instead of having
+a central place with everybody's data or metadata to look for candidates, the
+search for them is done in a _federated_ way, _i.e._ completely distributed
+among people who own the data. When a search transaction is triggered with
+certain conditions on the network, it's broadcast throughout the network and
+each client app will see the transaction and check if the user's metadata
+satisfies the conditions of the search. If yes, the user will be notified about
+it, and can decide to give consent or not. The recipient of the data only gets
+the data of the users who have consented to the transaction. It will then
+compensate the users for their data and will receive an anonymized copy of the
+data from the holder of the data (_e.g._ the hospital or the digital health app
+holding the data).
+
+The above method removes the need for any centralized place to hold users'
+metadata, and the users' device is the only entity having the complete picture
+of the users' information.

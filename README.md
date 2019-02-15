@@ -3,8 +3,9 @@ This repository defines the technical specifications of [meHealthX
 (mhx)](https://www.mehealthx.com/) network, along with the specifications of
 required contracts, storage, ID management, etc.
 
-The overview document is a place to start which keeps a high level overview of
-the components, each defined in their relevant documents.
+The [overview document](meps/mep-0-overview.md) is a place to start which keeps
+a high level overview of the components, each defined in their relevant
+documents.
 
 Each document is an enhancement proposal, i.e. it enhances the status quo. At
 the starting the status quo starts as an empty set, and mhx enhancement
