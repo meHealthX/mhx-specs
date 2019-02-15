@@ -49,6 +49,17 @@ On the other hand, the businesses have more sensitive permissions on the system
 and they need to go through more scrutiny to get their corresponding keys and
 permissions. [MEP 4](mep-4-ids.md) further explains the id management.
 
+Such a system requires a reliable method to handle the following two cases:
+- Users inevitably loos or want to change their private/master keys.
+- There is a need for a reliable and reproducible way of initializing users'
+  digital identity.
+- A user should be the only entity having the complete picture of their
+  information and where they're stored.
+
+[MEP 6](mep-6-user-initialization.md) explains how these cases are handled. As
+a result of this process, and the fact no user information is kept on the
+chain, users loosing/changing their keys is absolutely no issue.
+
 ## Storage
 mhx does NOT store any data other than the permissions to the hashes of the
 data. We borrow many concepts from the [Ocean
